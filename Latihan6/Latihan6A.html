@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contoh for Bekalang</title>
+</head>
+<body>
+<Pre>
+<Script language ="Javascript">
+var baris, i=0;
+var nilai_prompt = prompt("Tinggi : ", 5);
+var tinggi = parseInt(nilai_prompt);
+
+for (baris = 1; baris <= tinggi ; baris++){
+			//Buat Sejumlah Spasi
+for (i = 1; i<= tinggi - baris; i++)
+{
+document.write(" "); // Karakter Spasi
+}
+//Tampilkan *
+for (i = 1; i < 2 * baris; i++)
+{
+document.write("*");
+}
+//Pindah Baris
+document.write("\n");
+}
+</Script>
+</Pre>
+</body>
+</html>

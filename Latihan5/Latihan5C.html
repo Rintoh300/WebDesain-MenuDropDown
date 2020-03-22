@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>latihan5C</title>
+</head>
+<body>
+	<script language="JavaScript">
+	var tugas 	= prompt("Input Tugas:",0);
+	var uts 	= prompt("Input UTS:",0);
+	var uas 	= prompt("Input UAS:",0);
+	var akhir = (tugas*0.3)+(uts*0.3)+(uas*0.4);
+	var grade ="";
+	var ket ="";
+	if (akhir >= 80)
+		grade="A"
+	else if (akhir >=70 && akhir <80)
+		grade="B"
+	else if (akhir >=56 && akhir <70)
+		grade="C"
+	else if (akhir >=45 && akhir <56)
+		grade="D"
+	else
+		grade="E"
+	document.write ("Nilai Tugas adalah "+tugas+"<br>")
+	document.write ("Nilai UTS adalah "+uts+"<br>")
+	document.write ("Nilai UAS adalah "+uas+"<br>")
+	document.write ("Nilai Akhir adalah "+akhir+"<br>")
+	document.write ("Nilai Grade adalah "+grade+"<br>")
+	if (akhir>=56)
+		ket = "LULUS"
+	else
+		ket = "GAGAL"
+	document.write ("Keterangan "+ ket)
+</script>
+</body>
+</html>

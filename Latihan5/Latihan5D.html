@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>contoh if-else latihan5D</title>
+</head>
+	<script language="JavaScript">
+		function test ()
+		{
+	var a 		= document.kirim.T1.value
+	var b 		= document.kirim.T2.value
+	var c 		= document.kirim.T3.value
+	var uts =parseInt(a)
+	var uas =parseInt(b)
+	var tugas =parseInt(c)
+	var akhir = (tugas*0.3)+(uts*0.3)+(uas*0.4);
+	var grade ="";
+	var ket ="";
+	if (akhir >= 80)
+		grade="A"
+	else if (akhir >=70 && akhir <80)
+		grade="B"
+	else if (akhir >=56 && akhir <70)
+		grade="C"
+	else if (akhir >=45 && akhir <56)
+		grade="D"
+	else
+		grade="E"
+	document.write ("Nilai Tugas adalah 	: "+tugas+"<br>");
+	document.write ("Nilai UTS adalah 		: "+uts+"<br>");
+	document.write ("Nilai UAS adalah 		: "+uas+"<br>");
+	document.write ("Nilai Akhir adalah 	: "+akhir+"<br>");
+	document.write ("Nilai Grade adalah		: "+grade+"<br>");
+	if (akhir>=56)
+		ket = "LULUS"
+	else
+		ket = "GAGAL"
+	document.write ("Keterangan "+ ket)
+}
+</script>
+<body>
+	<form method="post" name="kirim">
+<pre>
+Masukan UTS 	: <input type="text" name="T1">
+Masukan UAS 	: <input type="text" name="T2">
+Masukan Tugas 	: <input type="text" name="T3">
+<br>
+	<input type="button" name="button1" value="submit" onclick=test()>
+
+</body>
+</html>

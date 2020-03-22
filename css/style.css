@@ -1,0 +1,92 @@
+/*navbar*/
+.navbar-brand{
+	font-family: viga;
+	font-size: 32px;
+}
+
+.jumbotron{
+	background-image: linear-gradient(rgb(0,0,0,0.6),rgb(0,0,0,0.3)), url('../gambar/1.jpg');
+	background-size: cover;
+	height: 540px;
+	text-align: center;
+}
+
+/*Pengaturan Menu Dropdown*/
+
+/*Akhir Pengaturan Menu DropDown*/
+
+.container span {
+    color: #6893c8;
+}
+.container{
+    scroll-behavior: smooth;
+
+}
+
+.jumbotron .display-4{
+	color: white;
+	margin-top: 150px;
+	font-weight: 200;
+	text-shadow: 1px 1px 1px rgb(0,0,0,0.7);
+	font-size: 30px;
+	margin-bottom: 30px;
+	font-family: 'Playfair Display', serif;
+}
+
+.jumbotron .display-4 span{
+	font-weight: 500;
+	
+}
+/*row working space*/
+
+.workingspace h3{
+    font-size: 50px;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+.workingspace{
+    height: 550px;
+}
+
+/*unity*/
+
+.tombol{
+	text-transform: uppercase;
+	border-radius: 40px;
+}
+
+/*jumbtron*/
+
+
+
+/*Ukuran Berbeda ketika responsive destop Versi "@media (min-width: 992px)" */
+@media (min-width: 992px){
+	.navbar-brand, .nav-link{
+		color:white !important;
+		text-shadow: 1px 1px 1px rgb(0,0,0,0.7);
+	}
+
+	.nav-link{
+		/*memberikan jarak pada tulisan navbar "text-transform: uppercase;"*/
+		text-transform: uppercase;
+		margin-right: 30px;
+	}
+
+	.nav-link:hover::after{
+		content: ' ';
+		display: block;
+		border-bottom: 3px solid #0B63DC;
+		width: 50%;
+		margin: auto;
+	}
+	.jumbotron{
+		margin-top: -75px;
+		height: 640px;
+	}
+
+	.jumbotron .display-4{
+		font-size: 60px;
+	}
+}
+
+

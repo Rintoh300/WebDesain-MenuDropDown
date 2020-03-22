@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contoh Program JavaScript</title>
+</head>
+<script language = "JavaScript">
+function test()
+{
+	vall=window.prompt ("Input Nilai (1-5) : ")
+	switch (vall)
+	{
+	case "1" :
+		document.write ("Bilangan Satu")
+		break
+	case "2" :
+		document.write ("Bilangan Dua")
+		break
+	case "3" :
+		document.write ("Bilangan Tiga")
+		break
+	case "4" :
+		document.write ("Bilangan Empat")
+		break
+	case "5" :
+		document.write ("Bilangan Lima")
+		break
+	default :
+		document.write ("Bilangan Lainnya")
+		break
+	}
+}
+</script>
+<body>
+	<input type="button" name="button1" value="Switch" onclick= "test()">
+</body>
+</html>

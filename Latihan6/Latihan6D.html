@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Validasi Masukan</title>
+</head>
+<body>
+<Script language = "JavaScript">
+	function cekNama(form){
+		if(form.elements[0].value == ""){
+			alert("Nama harus dimasukan");
+			form.nama.focus();
+			form.nama.select();
+			return(false);
+		}
+			alert("Terima Kasih, " + form.elements[0].value);
+			return(true)
+	}
+</Script>
+<form name ="formku">
+<pre>
+Nama :	<Input type = "Text" Name = "nama"><br>
+		<Input type = "Button" value = "kirim" onClick = "cekNama(this.form)"><br>
+</pre>
+</form>
+</body>
+</html>
